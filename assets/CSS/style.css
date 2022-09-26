@@ -87,8 +87,7 @@ p span {
 }
 #projects {
     width: 80%;
-    margin: 0px;
-    padding: 0px;
+    
 }
 
 #projects h3 {
@@ -206,8 +205,5 @@ footer nav a {
 @media screen and (max-width: 600px) {
     #about {
         display: block;
-    }
-    #projects {
-        
     }
 }
