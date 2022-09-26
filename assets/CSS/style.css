@@ -5,11 +5,10 @@
     --p4: #17202A; /*black*/
     --p5: #F4D03F; /*yellow*/
     --link-active: rgb(72, 255, 0);
-    --link-hover: rgb(0, 132, 255);
+    /*--link-hover: rgb(0, 132, 255);*/
 }
 * {
     box-sizing: border-box;
-   /* border-style: dotted; */
 }
 body {
     display: flex;
@@ -22,7 +21,6 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 0;
-    /*background-color: var(--p2);*/
     margin-bottom: 0px;
 }
 header h1 {
@@ -36,7 +34,7 @@ header h1 {
 header h2 {
     font-size: 20px;
     margin-top: 0px;
-    color: #3FDEF4;
+    color: var(--p4);
 
 }
 header p {
@@ -49,12 +47,6 @@ header p {
     font-style: none;
     color: var(--p3);
 }
-/*
-a:link {
-    font-style: normal;
-    
-    color: red;
-}*/
 
 a:hover {
     cursor: grab;
@@ -64,20 +56,20 @@ a:hover {
 a:active {
     color: var(--link-active);
 }
+
 #about {
    display: flex;
     padding: 50px;
-    /*background-color: var(--p1);*/
+        
 }
 
 #about p {
     width: 70%;
-   flex-direction: ;
    padding-left: 50px;
     padding-top: 10px;
 }
 p span {
-    font-size: 20px;
+    font-size: 30px;
     font-style: italic;
     font-weight: bold;
 }
@@ -86,17 +78,112 @@ p span {
     height: 300px;
     width: 300px;
     border-radius: 30px;
-    box-shadow: 20px -10px var(--p2);
+    box-shadow: 10px -10px var(--p2);
     z-index: 1;
     flex-shrink: 0;
     
 }
+#projects {
+    width: 80%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#projects h3 {
+    color: var(--p1);
+    font-size: 26px;
+    margin: 0px;
+    margin-bottom: 20px;
+    
+}
+
+.refactor {
+    display: flex;
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--p1);
+    margin: 0px;
+    padding: 0px;
+    
+}
+.refactor img {
+    width: 100%;
+    height: 800px;
+}
+.colab img {
+    width: 100%;
+    margin-top: 0px;
+
+}
+.placeholder img {
+    width: 100%;
+}
+.refactor p {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-style: solid;
+    border-color: var(--p1);
+    border-width: 5px;
+    color: var(--p5);
+    background-color: var(--p2);
+    z-index: 2;
+    font-size: 30px;
+    margin-top: 0px;
+}
+.colab {
+    display: flex;
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    margin-top: -10px;
+    
+}
+.colab p {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-style: solid;
+    border-color: var(--p1);
+    border-width: 5px;
+    color: var(--p5);
+    background-color: var(--p2);
+    z-index: 2;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+.placeholder {
+    display: flex;
+    display: inline-block;
+    position: relative;
+    width: 40%;
+}
+.placeholder p {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-style: solid;
+    border-color: var(--p1);
+    border-width: 5px;
+    color: var(--p5);
+    background-color: var(--p2);
+    z-index: 2;
+    font-size: 25px;
+    margin-top: 0px;
+}
 #projects img {
-    height: 400px;
-    width: 400px;
+    /*height: 400px;
+    /*width: 400px;*/
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--p1);
 }
 footer {
-   /* background-color: var(--p2);*/
+   
 }
 @media screen and (max-width: 600px) {
     #about {
