@@ -107,7 +107,7 @@ p span {
     border-color: var(--p1);
     margin: 0px;
     padding: 0px;
-    
+
 }
 .refactor img {
     width: 100%;
@@ -122,6 +122,8 @@ p span {
     width: 100%;
 }
 .refactor p {
+    /*display: flex;
+    flex-shrink: 2;*/
     position: absolute;
     top: 0px;
     right: 0px;
@@ -189,5 +191,5 @@ footer {
     #about {
         display: block;
     }
-
+    
 }
