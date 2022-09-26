@@ -206,4 +206,13 @@ footer nav a {
     #about {
         display: block;
     }
+    .refactor p {
+        font-size: 12px;
+    }
+    .colab p {
+        font-size: 12px;
+    }
+    .placeholder p {
+        font-size: 12px;
+    }
 }
